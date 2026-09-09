@@ -4,6 +4,9 @@ Aim of SHARP is to provide a series of steps that can assist scientists to find 
 
 The pipeline is divided logically into a data layer and a process layer. The initial input and its subsequent transformations as it goes through the pipeline are visible in this layer. The process layer contains all the tools and algorithms that are responsible for transforming the input sequence into the final function ranking list. We also divide the pipeline chronologically into the pre-processing, labelling and ranking stages. This keeps the whole process modular. The jupyter notebook provided with the paper can be easily customized. The pipeline is capable of both large scale and single protein functional enrichment.
 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/932f2245-84f7-43e5-a1ae-5796b74a6ed4" />
+
+
 ## Pre-Processing
 ### Data Layer
 **Input:** The protein(s) sequence with domains of unknown function.
