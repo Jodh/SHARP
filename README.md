@@ -32,15 +32,15 @@ This stage aggregates the function descriptions from the input by counting all d
 
 ## Instructions for Running SHARP
 ### Install Jupyter Notebook
-Using the command `pip install notebook` to install jupyter notebook on your computer. This is needed to run the `SHARP.ipynb` file.
+Use the command `pip install notebook` to install jupyter notebook on your computer. This is needed to run the `SHARP.ipynb` file.
 ### Download SHARP.ipynb
 Run Jupyter Notebook which is needed to run `SHARP.ipynb`, using the command `jupyter notebook`. This will open your web browser with a directory like interface. Find the location of `SHARP.ipynb` where ever it was downloaded. Click on it to run it. It will open another tab on your browser with SHARP ready to run.
 ### Help for the Pre-processing Step
 In its current iteration, the pipeline expects the user to have access to a local foldseek installation and also have the .pdb model for the protein you wish to query. I have provided a short step by step guide to work with foldseek once you have it installed.
 
-1. Install on Linux system through `conda install -c conda-forge -c bioconda foldseek`. For more details check https://github.com/steineggerlab/foldseek
+Install on Linux system through `conda install -c conda-forge -c bioconda foldseek`. For more details check https://github.com/steineggerlab/foldseek
 
-2. Download the database you want to search in (swissprot by default):
+Download the database you want to search in (swissprot by default):
 
 `foldseek databases Alphafold/Swiss-Prot sp tmp`
 
@@ -48,13 +48,13 @@ command template:
 
 `foldseek databases <address to the database on foldseek's servers> <custom_name> <tmp folder name>`
 
-3. create index from downloaded database
+Create index from downloaded database
 (skip this step if doing large batch queries)
 
 `foldseek createindex sp tmp`
 
 
-4. search the database and produce 
+Search the database
 
 `foldseek easy-search A0A015LDT9.pdb sp aln tmp --format-output query,target,qstart,qend,tstart,tend,alntmscore,qtmscore,ttmscore,lddt,prob,evalue`
 
